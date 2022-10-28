@@ -1,0 +1,33 @@
+.player {
+  margin: 0 auto;
+  max-width: 100vw;
+  height: 70vh;
+  margin: 50px 10% 0 10%;
+  background: rgba(244, 244, 244, 0.5);
+  border-radius: 30px;
+  overflow: hidden;
+  transition: 500ms;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.playButton {
+  position: absolute;
+}
+.imgn {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 0%;
+}
+
+@media (max-width: 900px) {
+  .player {
+    height: 40vh;
+  }
+}
+@media (max-width: 500px) {
+  .player {
+    height: 25vh;
+  }
+}
