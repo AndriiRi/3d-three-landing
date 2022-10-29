@@ -5,9 +5,8 @@ import VideoButton from "./buttons/VideoButton";
 const VideoPlayer = ({ param }) => {
   return (
     <div className={cl.player}>
-      <VideoButton className={cl.playButton} onClick={() => param(true)}>
-        Play
-      </VideoButton>
+      <VideoButton className={cl.playButton} onClick={() => param(true)} />
+
       <img className={cl.imgn} src={YouTubeBaner} alt="videoBaner" />
     </div>
   );
