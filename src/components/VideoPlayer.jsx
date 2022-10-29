@@ -1,10 +1,13 @@
 import React from "react";
 import cl from "./styles/VideoPlayer.module.css";
 import YouTubeBaner from "./images/youtubeBaner.svg";
-const VideoPlayer = () => {
+import VideoButton from "./buttons/VideoButton";
+const VideoPlayer = ({ param }) => {
   return (
     <div className={cl.player}>
-      <button className={cl.playButton}>Play</button>
+      <VideoButton className={cl.playButton} onClick={() => param(true)}>
+        Play
+      </VideoButton>
       <img className={cl.imgn} src={YouTubeBaner} alt="videoBaner" />
     </div>
   );

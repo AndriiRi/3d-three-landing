@@ -16,8 +16,7 @@ function App() {
       </ModalVideoPlayer>
       <Header />
       <MainBanner />
-      <button onClick={() => setModal(true)}> тимчасова кнопка</button>
-      <VideoPlayer />
+      <VideoPlayer param={setModal} />
       <WhatWhereHow />
       <ModelViewer />
     </div>

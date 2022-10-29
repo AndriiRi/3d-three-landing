@@ -9,7 +9,7 @@ const ModelViewer = () => {
   return (
     <Canvas dpr={[1, 2]} style={{ position: "absolute" }}>
       <PresentationControls
-        speed={1.5}
+        speed={10.5}
         global
         zoom={0.5}
         polar={[-0.1, Math.PI / 4]}

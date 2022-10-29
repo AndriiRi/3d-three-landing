@@ -1,0 +1,13 @@
+.play {
+  position: absolute;
+  border: none;
+  background: rgba(184, 9, 82, 1);
+  padding: 15px;
+  border-radius: 10px;
+  transition: 500ms;
+}
+
+.play:hover {
+  cursor: pointer;
+  padding: 20px;
+}
