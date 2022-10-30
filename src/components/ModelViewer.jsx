@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import PropTypes from "prop-types";
 import GLTFViewer from "./GLTFViewer";
 import cl from "./styles/ModelViewer.module.css";
 
@@ -17,32 +16,50 @@ const ModelViewer = () => {
   };
 
   return (
-    <div className={cl.objectWindow}>
-      <GLTFViewer
-        camera={{ position: [-10, 0, 30], fov: 8 }}
-        onActionsLoad={onActionsLoad}
-        path={activeModel}
-      />
-      <div>
-        {actions &&
-          Object.keys(actions).map((i) => {
-            return (
-              <button
-                key={`action-${i}`}
-                onClick={() => runAction(i)}
-                className={`${i === animation ? "active" : ""}`}
-              >
-                {i}
-              </button>
-            );
-          })}
+    <div className={cl.modelViever}>
+      <div className={cl.objectWindow}>
+        <GLTFViewer
+          camera={{ position: [-10, 0, 30], fov: 8 }}
+          onActionsLoad={onActionsLoad}
+          path={activeModel}
+        />
+      </div>
+
+      <div className={cl.infoAndOptions}>
+        <p className={cl.description}>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen.
+        </p>
+        <div>
+          <p className={cl.title}>Character</p>
+          <div className={cl.characters}>
+            <div className={cl.character}></div>
+            <div className={cl.character}></div>
+            <div className={cl.character}></div>
+            <div className={cl.character}></div>
+            <div className={cl.character}></div>
+          </div>
+        </div>
+        <div className={cl.animationButtons}>
+          <p className={cl.title}>Animation & poses</p>
+          {actions &&
+            Object.keys(actions).map((i) => {
+              return (
+                <button
+                  className={cl.animationButton}
+                  key={`action-${i}`}
+                  onClick={() => runAction(i)}
+                >
+                  {i}
+                </button>
+              );
+            })}
+        </div>
       </div>
     </div>
   );
-};
-
-ModelViewer.propTypes = {
-  className: PropTypes.string,
 };
 
 export default ModelViewer;

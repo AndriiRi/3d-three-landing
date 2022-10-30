@@ -1,4 +1,88 @@
+.modelViever {
+  display: flex;
+  margin: 0 auto;
+  max-width: 100vw;
+  max-height: 90vh;
+  margin: 50px 10% 0 10%;
+  padding: 30px;
+  border: 1px solid rgba(223, 224, 226, 1);
+  background: #fff;
+  border-radius: 30px;
+}
 .objectWindow {
-  height: 600px;
-  width: 600px;
+  border: 1px solid rgba(223, 224, 226, 1);
+  border-radius: 15px;
+  min-width: 50%;
+  margin-right: 15px;
+}
+
+.infoAndOptions {
+  border: 1px solid rgba(223, 224, 226, 1);
+  border-radius: 15px;
+  padding: 15px;
+  margin-left: 15px;
+}
+
+.description {
+  font-family: "Comfortaa";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+
+  letter-spacing: 0.02em;
+}
+.title {
+  font-family: "Comfortaa";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.characters {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.character {
+  height: 85px;
+  width: 85px;
+  background: rgb(255, 255, 255);
+  border: 1px solid rgba(223, 224, 226, 1);
+
+  border-radius: 15px;
+  transition: 500ms;
+}
+.character:hover {
+  border: 1px solid rgba(154, 16, 50, 1);
+  box-shadow: 0px 0px 6px 0px rgba(154, 16, 50, 1);
+}
+
+.animationButton {
+  border: none;
+  background-color: none;
+  font-family: "Comfortaa";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #6b6b6b;
+  background: #fff;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  margin: 12px;
+  transition: 500ms;
+}
+.animationButton::after:hover {
+  border: 1px soli #ff0000;
+  background-color: #fff;
+}
+
+.animationButton:active {
+  border: 1px soli #ff0000;
+  background-color: #fff;
 }
