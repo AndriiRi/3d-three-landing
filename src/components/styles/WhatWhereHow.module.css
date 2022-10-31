@@ -33,6 +33,7 @@
   line-height: 38px;
   letter-spacing: 2px;
   text-transform: uppercase;
+  overflow-y: hidden;
 }
 @media (max-width: 900px) {
   .points {

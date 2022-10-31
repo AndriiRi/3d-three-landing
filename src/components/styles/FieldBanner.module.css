@@ -1,0 +1,57 @@
+.fieldBanner {
+  margin: 0 auto;
+  max-width: 100vw;
+  height: 50vh;
+  margin: 50px 10% 0 10%;
+  background: rgba(214, 49, 49, 0.5);
+  border-radius: 30px;
+  transition: 500ms;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  overflow-x: hidden;
+}
+.description {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+  padding: 10px;
+}
+
+.title {
+  font-family: "Viga";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 47px;
+  text-align: center;
+  letter-spacing: 0.940898px;
+  text-transform: uppercase;
+  overflow-x: hidden;
+  max-width: 35vw;
+  overflow-x: hidden;
+  color: #ffffff;
+
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+.imgn {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 0%;
+  opacity: 0.5;
+  overflow-x: hidden;
+}
+@media (max-width: 900px) {
+  .fieldBanner {
+    min-height: 40vh;
+  }
+}
+@media (max-width: 500px) {
+  .fieldBanner {
+    min-height: 25vh;
+  }
+}

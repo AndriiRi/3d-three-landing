@@ -1,0 +1,46 @@
+.slider {
+  margin: 0 auto;
+  max-width: 100vw;
+  max-height: 350px;
+  height: 70vh;
+  margin: 20px 10% 0 10%;
+  box-sizing: border-box;
+  position: relative;
+  margin: 20px auto;
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+
+.slider::-webkit-scrollbar {
+  display: none;
+}
+
+.sliderBody {
+  display: flex;
+  width: 400%;
+  position: absolute;
+  animation: slider 20s linear infinite;
+}
+
+.sliderBody:hover {
+  animation-play-state: paused;
+}
+
+.sliderTrack {
+  display: flex;
+  position: relative;
+  align-items: center;
+  float: left;
+  width: 300%;
+  padding: 20px 0px;
+  overflow-x: hidden;
+}
+
+@keyframes slider {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -170%;
+  }
+}

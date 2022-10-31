@@ -7,6 +7,8 @@ import ModalVideoPlayer from "./components/ModalVideoPlayer/ModalVideoPlayer";
 import VideoLink from "./components/ModalVideoPlayer/VideoLink";
 import WhatWhereHow from "./components/WhatWhereHow";
 import ModelViewer from "./components/ModelViewer";
+import HorizontalSlider from "./components/HorizontalSlider";
+import FieldBanner from "./components/FieldBanner";
 function App() {
   const [modal, setModal] = useState(false);
   return (
@@ -19,6 +21,8 @@ function App() {
       <VideoPlayer param={setModal} />
       <WhatWhereHow />
       <ModelViewer />
+      <HorizontalSlider />
+      <FieldBanner />
     </div>
   );
 }

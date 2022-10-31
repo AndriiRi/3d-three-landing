@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import GLTFViewer from "./GLTFViewer";
 import cl from "./styles/ModelViewer.module.css";
-
+import { ReactComponent as MiniMan } from "./images/characters/miniMan.svg";
 const ModelViewer = () => {
   const [activeModel] = useState(`${process.env.PUBLIC_URL}/model/0001.glb`);
 
@@ -35,7 +35,9 @@ const ModelViewer = () => {
         <div>
           <p className={cl.title}>Character</p>
           <div className={cl.characters}>
-            <div className={cl.character}></div>
+            <div className={cl.character}>
+              <MiniMan />
+            </div>
             <div className={cl.character}></div>
             <div className={cl.character}></div>
             <div className={cl.character}></div>

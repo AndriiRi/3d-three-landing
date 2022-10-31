@@ -5,7 +5,6 @@ import { ReactComponent as Animated } from "./icons/smallIcons/Animated.svg";
 import { ReactComponent as Support } from "./icons/smallIcons/support.svg";
 import { ReactComponent as Unifed } from "./icons/smallIcons/unifed.svg";
 import { ReactComponent as Unique } from "./icons/smallIcons/unique.svg";
-
 import { useState } from "react";
 const WhatWhereHow = () => {
   const [points] = useState([

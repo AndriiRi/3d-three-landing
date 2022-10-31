@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  font-size: 42px;
+  font-family: sans-serif;
+  color: #333;
+  overflow: hidden;
+}
+
+.sliderEllement {
+  width: 250px;
+  height: 180px;
+  background: #999;
+  border-radius: 15px;
+  display: inline-block;
+  margin: 0 24.7px;
+  float: left;
+  transition: all 0.2s ease-out;
+}
+
+.sliderEllement:hover {
+  transform: scale(1.1);
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.slider {
+  height: 210px;
+  width: 800px;
+  border: 2px solid #eee;
+  overflow: hidden;
+  box-sizing: border-box;
+  position: relative;
+  margin: 200px auto;
+  overflow-x: auto;
+}
+
+.sliderBody {
+  display: flex;
+  justify-content: space-around;
+  width: 200%;
+  margin: 10px 0;
+  position: absolute;
+  animation: slider 20s linear infinite;
+}
+
+.sliderBody:hover {
+  animation-play-state: paused;
+}
+
+/*.half {
+    float: left;
+    width: 10%;
+  }*/
+
+.sliderTrack {
+  display: flex;
+  float: left;
+  width: 300%;
+}
+
+@keyframes slider {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -150%;
+  }
+}
